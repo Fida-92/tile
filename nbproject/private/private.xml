@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group name="gewinnspiele">
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/Tile/src/de/fida/input/KeyManager.java</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/Tile/src/de/fida/states/GameState.java</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/Tile/src/de/fida/tile/Tile.java</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/Tile/src/de/fida/entities/creatures/Creature.java</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/Tile/src/de/fida/entities/Entity.java</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/Tile/src/de/fida/tile/DirtTile.java</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/Tile/src/de/fida/display/Display.java</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/Tile/src/de/fida/world/World.java</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/Tile/src/de/fida/utils/Utils.java</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/Tile/resources/worlds/world.txt</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/Tile/src/de/fida/entities/Player.java</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/Tile/src/de/fida/states/State.java</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/Tile/src/de/fida/tile/GrassTile.java</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/Tile/src/de/fida/tile/Game.java</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/Tile/src/de/fida/tile/RockTile.java</file>
+        </group>
+    </open-files>
+</project-private>
