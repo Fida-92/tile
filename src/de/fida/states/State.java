@@ -1,16 +1,16 @@
 package de.fida.states;
 
-import de.fida.tile.Game;
+import de.fida.tile.Handler;
 import java.awt.Graphics;
 
  
 public abstract class State {
 
-    protected Game game;
+    protected Handler handler;
     private static State currentState=null;
 
-    public State(Game game) {
-        this.game = game;
+    public State(Handler handler) {
+        this.handler = handler;
     }
 
     

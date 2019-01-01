@@ -1,6 +1,7 @@
 package de.fida.entities.creatures;
 
 import de.fida.entities.Entity;
+import de.fida.tile.Handler;
 import java.awt.Graphics;
 
 public class Creature extends Entity {
@@ -13,8 +14,8 @@ public class Creature extends Entity {
     protected static final double DEFAULT_SPEED = 3.5;
     protected float xMove, yMove;
 
-    public Creature(float x, float y, int width, int height) {
-        super(x, y, width, height);
+    public Creature(Handler handler, float x, float y, int width, int height) {
+        super(handler, x, y, width, height);
         health = DEFAULT_HEALTH;
         speed = DEFAULT_SPEED;
         xMove = 0;

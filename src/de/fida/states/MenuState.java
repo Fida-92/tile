@@ -1,19 +1,14 @@
-
-
 package de.fida.states;
 
-import de.fida.tile.Game;
+import de.fida.tile.Handler;
 import java.awt.Graphics;
 
- 
-public class MenuState extends State{
+public class MenuState extends State {
 
-    public MenuState(Game game) {
-        super(game);
+    public MenuState(Handler handler) {
+        super(handler);
     }
 
-    
-    
     @Override
     public void tick() {
     }

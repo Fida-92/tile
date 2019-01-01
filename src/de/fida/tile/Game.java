@@ -2,6 +2,7 @@ package de.fida.tile;
 
 import de.fida.display.Display;
 import de.fida.graphics.Assets;
+import de.fida.graphics.GameCamera;
 import de.fida.input.KeyManager;
 import de.fida.states.GameState;
 import de.fida.states.State;
@@ -22,7 +23,10 @@ public class Game implements Runnable {
     private Graphics g;
     private State gameState;
     private KeyManager keyManager;
-
+    private GameCamera gameCamera;
+    
+    private Handler handler; 
+    
     public Game(String title, int width, int height) {
         this.width = width;
         this.height = height;
@@ -34,8 +38,9 @@ public class Game implements Runnable {
 
         display = new Display(title, width, height);
         Assets.init();
-
-        gameState = new GameState(this);
+        gameCamera = new GameCamera(this, 0, 0);
+        handler = new Handler(this);
+        gameState = new GameState(handler);
         State.setCurrentState(gameState);
         display.getFrame().addKeyListener(keyManager);
 
@@ -91,6 +96,9 @@ public class Game implements Runnable {
         return keyManager;
     }
 
+    public GameCamera getGameCamera(){
+        return gameCamera;
+    }
     public synchronized void start() {
         if (running) {
             return;
@@ -112,4 +120,14 @@ public class Game implements Runnable {
         }
 
     }
+
+    public int getWidth() {
+        return width;
+    }
+
+    public int getHeight() {
+        return height;
+    }
+    
+    
 }

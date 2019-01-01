@@ -2,37 +2,43 @@ package de.fida.entities;
 
 import de.fida.entities.creatures.Creature;
 import de.fida.graphics.Assets;
-import de.fida.tile.Game;
+import de.fida.tile.Handler;
+import java.awt.Color;
 import java.awt.Graphics;
 
 public class Player extends Creature {
 
-    private Game game;
+    private Handler handler;
 
-    public Player(Game game, float x, float y) {
-        super(x, y, Creature.DEFAULT_CREATUR_WIDTH, Creature.DEFAULT_CREATUR_HEIGHT);
-        this.game = game;
+    public Player(Handler handler, float x, float y) {
+        super(handler, x, y, Creature.DEFAULT_CREATUR_WIDTH, Creature.DEFAULT_CREATUR_HEIGHT);
+        this.handler = handler;
+        bounds.x=24;
+        bounds.y=32;
+        bounds.width=16;
+        bounds.height=32;
     }
 
     @Override
     public void tick() {
         getInput();
         move();
+        handler.getGameCamera().centerOnEntity(this);
     }
 
     private void getInput() {
         xMove = 0;
         yMove = 0;
-        if (game.getKeyManager().up) {
+        if (handler.getKeyManager().up) {
             yMove -= speed;
         }
-        if (game.getKeyManager().down) {
+        if (handler.getKeyManager().down) {
             yMove += speed;
         }
-        if (game.getKeyManager().left) {
+        if (handler.getKeyManager().left) {
             xMove -= speed;
         }
-        if (game.getKeyManager().right) {
+        if (handler.getKeyManager().right) {
             xMove += speed;
         }
 
@@ -40,7 +46,9 @@ public class Player extends Creature {
 
     @Override
     public void render(Graphics g) {
-        g.drawImage(Assets.player, (int) x, (int) y, width, height, null);
+        g.drawImage(Assets.player, (int) (x - handler.getGameCamera().getxOffset()), (int) (y - handler.getGameCamera() .getyOffset()), width, height, null);
+        g.setColor(Color.red);
+        g.fillRect((int) (x + bounds.x - handler.getGameCamera().getxOffset()),(int) (y + bounds.y - handler.getGameCamera().getyOffset()),bounds.width,bounds.height);
     }
 
 }

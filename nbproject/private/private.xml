@@ -8,10 +8,14 @@
             <file>file:/C:/Users/User/Documents/NetBeansProjects/Tile/src/de/fida/tile/Tile.java</file>
             <file>file:/C:/Users/User/Documents/NetBeansProjects/Tile/src/de/fida/entities/creatures/Creature.java</file>
             <file>file:/C:/Users/User/Documents/NetBeansProjects/Tile/src/de/fida/entities/Entity.java</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/Tile/src/de/fida/graphics/Assets.java</file>
             <file>file:/C:/Users/User/Documents/NetBeansProjects/Tile/src/de/fida/tile/DirtTile.java</file>
             <file>file:/C:/Users/User/Documents/NetBeansProjects/Tile/src/de/fida/display/Display.java</file>
             <file>file:/C:/Users/User/Documents/NetBeansProjects/Tile/src/de/fida/world/World.java</file>
             <file>file:/C:/Users/User/Documents/NetBeansProjects/Tile/src/de/fida/utils/Utils.java</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/Tile/src/de/fida/graphics/GameCamera.java</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/Tile/src/de/fida/tile/Handler.java</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/Tile/src/de/fida/states/MenuState.java</file>
             <file>file:/C:/Users/User/Documents/NetBeansProjects/Tile/resources/worlds/world.txt</file>
             <file>file:/C:/Users/User/Documents/NetBeansProjects/Tile/src/de/fida/entities/Player.java</file>
             <file>file:/C:/Users/User/Documents/NetBeansProjects/Tile/src/de/fida/states/State.java</file>
